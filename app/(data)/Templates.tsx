@@ -3,7 +3,7 @@ export default [
         name: 'Blog Title',
         desc: 'An AI tool that generates blog titles based on your blog information',
         category: 'Blog',
-        icon: 'https://cdn-icons-png.flaticon.com/128/4186/4186534.png',
+        icon: 'https://cdn-icons-png.flaticon.com/128/4905/4905454.png',
         aiPrompt: 'Give me 5 blog topic ideas in bullet points only based on the given niche & outline and give me the result in Rich Text Editor format',
         slug: 'generate-blog-title',
         form: [

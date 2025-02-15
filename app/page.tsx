@@ -1,4 +1,3 @@
-
 "use client";
 
 import { Button } from "@/components/ui/button";
@@ -20,7 +19,7 @@ export default function Home() {
       </header>
 
       {/* Features Section */}
-      <section className="max-w-4xl text-center">
+      <section className="max-w-5xl text-center">
         <h2 className="text-2xl font-semibold text-white mb-6">
           Why Choose Our AI Content Generator?
         </h2>
@@ -40,7 +39,7 @@ export default function Home() {
             <p>Ensures search engine-friendly content.</p>
           </div>
 
-          <div className="p-6 rounded-lg shadow-md bg-yellow-500 text-gray-900">
+          <div className="p-6 rounded-lg shadow-md bg-orange-500 text-white">
             <h3 className="font-bold text-lg">✏️ Customizable Output</h3>
             <p>Adjust content tone and style as per your needs.</p>
           </div>
@@ -59,6 +58,16 @@ export default function Home() {
             <h3 className="font-bold text-lg">💰 Affordable & Reliable</h3>
             <p>High-quality content at a low cost.</p>
           </div>
+
+          <div className="p-6 rounded-lg shadow-md bg-orange-500 text-white">
+            <h3 className="font-bold text-lg">⚡ Fast Performance</h3>
+            <p>Quick content generation with minimal delays.</p>
+          </div>
+
+          <div className="p-6 rounded-lg shadow-md bg-cyan-500 text-white">
+            <h3 className="font-bold text-lg">📊 Data-Driven Insights</h3>
+            <p>Improve content strategy with AI-powered analytics.</p>
+          </div>
         </div>
       </section>
 
@@ -66,7 +75,7 @@ export default function Home() {
       <div className="mt-10">
         <Button
           variant="destructive"
-          className="px-10 py-5 text-xl font-bold rounded-lg shadow-xl bg-gradient-to-r from-red-500 to-pink-500 text-white hover:scale-110 transition-transform duration-300"
+          className="px-12 py-6 text-2xl font-semibold rounded-lg shadow-lg bg-gradient-to-r from-red-500 to-pink-500 text-white hover:scale-110 transition duration-300"
           onClick={() => router.push("/dashboard")}
         >
           Get Started

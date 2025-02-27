@@ -7,9 +7,24 @@ export default function Home() {
   const router = useRouter();
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center p-6 bg-gradient-to-r from-indigo-900 to-purple-900">
+    <div className="min-h-screen flex flex-col items-center justify-center p-6 bg-gradient-to-r from-indigo-900 to-purple-900 relative overflow-hidden">
+      {/* Glowing/Sparkling Tiny Dots/Stars in Background */}
+      <div className="absolute inset-0 z-0">
+        {[...Array(50)].map((_, index) => (
+          <div
+            key={index}
+            className="absolute w-1 h-1 bg-white rounded-full animate-sparkle"
+            style={{
+              top: `${Math.random() * 100}%`,
+              left: `${Math.random() * 100}%`,
+              animationDelay: `${Math.random() * 5}s`,
+            }}
+          />
+        ))}
+      </div>
+
       {/* Header Section */}
-      <header className="text-center mb-12 animate-fade-in">
+      <header className="text-center mb-12 animate-fade-in relative z-10">
         <h1 className="text-5xl font-extrabold bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent drop-shadow-lg">
           AI Content Generator
         </h1>
@@ -19,7 +34,7 @@ export default function Home() {
       </header>
 
       {/* Features Section */}
-      <section className="max-w-5xl text-center">
+      <section className="max-w-5xl text-center relative z-10">
         <h2 className="text-2xl font-semibold bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent mb-6 animate-fade-in">
           Why Choose Our AI Content Generator?
         </h2>
@@ -82,22 +97,24 @@ export default function Home() {
           ].map((feature, index) => (
             <div
               key={index}
-              className={`p-6 rounded-lg shadow-md text-white ${feature.bgColor} hover:scale-105 transition-transform duration-300 animate-fade-in-up`}
+              className={`p-6 rounded-lg shadow-md text-white ${feature.bgColor} hover:scale-105 transition-transform duration-300 animate-fade-in-up relative overflow-hidden`}
             >
-              <h3 className="font-bold text-lg">
+              {/* Glowing Border Light */}
+              <div className="absolute inset-0 rounded-lg bg-white/10 blur-md animate-glow-border" />
+              <h3 className="font-bold text-lg relative z-10">
                 {feature.icon} {feature.title}
               </h3>
-              <p>{feature.description}</p>
+              <p className="relative z-10">{feature.description}</p>
             </div>
           ))}
         </div>
       </section>
 
       {/* CTA Section */}
-      <div className="mt-10 animate-fade-in">
+      <div className="mt-10 animate-fade-in relative z-10">
         <Button
           variant="destructive"
-          className="px-12 py-6 text-2xl font-semibold rounded-lg shadow-lg bg-gradient-to-r from-red-600 to-pink-600 text-white hover:scale-110 transition-transform duration-300"
+          className="px-12 py-6 text-2xl font-semibold rounded-lg shadow-lg bg-gradient-to-r from-purple-600 to-pink-600 text-white hover:scale-110 transition-transform duration-300 animate-pulse"
           onClick={() => router.push("/dashboard")}
         >
           Get Started

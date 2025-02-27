@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from 'react';
-import Image from 'next/image'; // Adjust if you're using a different library for Image
+import Image from 'next/image'; 
 import { TEMPLATE } from '../../_components/TemplateListSection';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';

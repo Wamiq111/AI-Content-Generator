@@ -7,20 +7,20 @@ export default function Home() {
   const router = useRouter();
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center p-6 bg-gradient-to-r from-blue-500 to-purple-600">
+    <div className="min-h-screen flex flex-col items-center justify-center p-6 bg-gradient-to-r from-indigo-900 to-purple-900">
       {/* Header Section */}
       <header className="text-center mb-12 animate-fade-in">
-        <h1 className="text-5xl font-extrabold text-white drop-shadow-lg">
+        <h1 className="text-5xl font-extrabold bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent drop-shadow-lg">
           AI Content Generator
         </h1>
-        <p className="text-lg text-yellow-200 mt-2 font-medium drop-shadow-md">
+        <p className="text-lg bg-gradient-to-r from-yellow-300 to-pink-300 bg-clip-text text-transparent mt-2 font-medium drop-shadow-md">
           Generate high-quality content instantly with AI-powered tools.
         </p>
       </header>
 
       {/* Features Section */}
       <section className="max-w-5xl text-center">
-        <h2 className="text-2xl font-semibold text-white mb-6 animate-fade-in">
+        <h2 className="text-2xl font-semibold bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent mb-6 animate-fade-in">
           Why Choose Our AI Content Generator?
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -29,55 +29,55 @@ export default function Home() {
               icon: "🚀",
               title: "Instant Content Creation",
               description: "Generate articles, blogs, and more in seconds.",
-              bgColor: "bg-blue-400",
+              bgColor: "bg-gradient-to-r from-indigo-600 to-purple-600",
             },
             {
               icon: "🧠",
               title: "AI-Powered Efficiency",
               description: "Uses cutting-edge AI models for accurate content.",
-              bgColor: "bg-purple-500",
+              bgColor: "bg-gradient-to-r from-purple-600 to-pink-600",
             },
             {
               icon: "🔍",
               title: "SEO Optimized",
               description: "Ensures search engine-friendly content.",
-              bgColor: "bg-green-500",
+              bgColor: "bg-gradient-to-r from-pink-600 to-red-600",
             },
             {
               icon: "✏️",
               title: "Customizable Output",
               description: "Adjust content tone and style as per your needs.",
-              bgColor: "bg-orange-500",
+              bgColor: "bg-gradient-to-r from-red-600 to-orange-600",
             },
             {
               icon: "💡",
               title: "User-Friendly Interface",
               description: "No technical skills required.",
-              bgColor: "bg-red-500",
+              bgColor: "bg-gradient-to-r from-orange-600 to-yellow-600",
             },
             {
               icon: "📌",
               title: "Multiple Formats Supported",
               description: "Create content for blogs, social media, and ads.",
-              bgColor: "bg-indigo-500",
+              bgColor: "bg-gradient-to-r from-yellow-600 to-green-600",
             },
             {
               icon: "💰",
               title: "Affordable & Reliable",
               description: "High-quality content at a low cost.",
-              bgColor: "bg-teal-500",
+              bgColor: "bg-gradient-to-r from-green-600 to-teal-600",
             },
             {
               icon: "⚡",
               title: "Fast Performance",
               description: "Quick content generation with minimal delays.",
-              bgColor: "bg-orange-500",
+              bgColor: "bg-gradient-to-r from-teal-600 to-cyan-600",
             },
             {
               icon: "📊",
               title: "Data-Driven Insights",
               description: "Improve content strategy with AI-powered analytics.",
-              bgColor: "bg-cyan-500",
+              bgColor: "bg-gradient-to-r from-cyan-600 to-blue-600",
             },
           ].map((feature, index) => (
             <div
@@ -97,7 +97,7 @@ export default function Home() {
       <div className="mt-10 animate-fade-in">
         <Button
           variant="destructive"
-          className="px-12 py-6 text-2xl font-semibold rounded-lg shadow-lg bg-gradient-to-r from-red-500 to-pink-500 text-white hover:scale-110 transition-transform duration-300"
+          className="px-12 py-6 text-2xl font-semibold rounded-lg shadow-lg bg-gradient-to-r from-red-600 to-pink-600 text-white hover:scale-110 transition-transform duration-300"
           onClick={() => router.push("/dashboard")}
         >
           Get Started

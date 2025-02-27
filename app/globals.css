@@ -70,6 +70,33 @@ body {
     }
   }
 
+  @keyframes sparkle {
+    0% {
+      opacity: 0;
+      transform: scale(0);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(0);
+    }
+  }
+
+  @keyframes glow-border {
+    0% {
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+    50% {
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    }
+    100% {
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+  }
+
   /* Animation Utilities */
   .animate-fade-in {
     animation: fadeIn 1s ease-in-out;
@@ -86,6 +113,14 @@ body {
   .animate-gradient-x {
     background-size: 200% 200%;
     animation: gradient-x 10s ease infinite;
+  }
+
+  .animate-sparkle {
+    animation: sparkle 2s infinite ease-in-out;
+  }
+
+  .animate-glow-border {
+    animation: glow-border 2s infinite ease-in-out;
   }
 }
 

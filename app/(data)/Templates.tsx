@@ -303,7 +303,7 @@ export default [
     },
     {
         name: 'Product Description',
-        desc: 'An AI tool to create SEO-friendly product descriptions based on your input.',
+        desc: 'An AI tool to create SEO-friendly product descriptions based on input.',
         icon: 'https://cdn-icons-png.flaticon.com/128/679/679922.png',
         category: 'Marketing',
         slug: 'product-description',

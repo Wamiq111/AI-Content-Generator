@@ -217,7 +217,7 @@ export default [
     },
     {
         name: 'Grammar Check',
-        desc: 'An AI tool to correct your English grammar mistake and make the text perfect.',
+        desc: 'An AI tool to correct your English grammar mistakes to perfection.',
         icon: 'https://cdn-icons-png.flaticon.com/128/12596/12596700.png',
         category: 'English',
         slug: 'english-grammar-checker',

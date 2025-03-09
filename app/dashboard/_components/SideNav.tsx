@@ -1,4 +1,4 @@
-"use client"; 
+"use client";
 
 import { FileClock, Home, Settings, WalletCards } from 'lucide-react';
 import Image from 'next/image';
@@ -24,10 +24,10 @@ function SideNav() {
 
   useEffect(() => {
     console.log(path);
-  }, [path]); 
+  }, [path]);
 
   return (
-    <div className='h-screen p-5 shadow-sm border bg-white'>
+    <div className='h-screen p-5 shadow-sm border bg-gradient-to-b from-purple-900 to-indigo-900'>
       <div className='flex justify-center'>
         <Image 
           src='/logo.svg' 
@@ -36,16 +36,16 @@ function SideNav() {
           height={100} 
         />
       </div>
-      <div>
+      <div className='mt-8'>
         {MenuList.map((menu, index) => (
           <Link key={index} href={menu.path}> {/* Make the item clickable */}
             <div
-              className={`flex gap-2 mb-2 p-3 hover:bg-primary hover:text-white rounded-lg cursor-pointer ${
-                path === menu.path ? 'bg-primary text-white' : ''
+              className={`flex gap-2 mb-2 p-3 hover:bg-purple-700 hover:text-white rounded-lg cursor-pointer transition-all duration-300 ${
+                path === menu.path ? 'bg-purple-700 text-white shadow-lg' : 'text-gray-300'
               }`} 
             >
-              <menu.icon />
-              <h2>{menu.name}</h2>
+              <menu.icon className='w-5 h-5' />
+              <h2 className='text-sm font-medium'>{menu.name}</h2>
             </div>
           </Link>
         ))}

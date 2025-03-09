@@ -1,7 +1,7 @@
 export default [
     {
         name: 'Blog Title',
-        desc: 'An AI tool that generates blog titles based on your blog information',
+        desc: 'An AI tool that generates blog titles based on your blog information.',
         category: 'Blog',
         icon: 'https://cdn-icons-png.flaticon.com/128/4905/4905454.png',
         aiPrompt: 'Give me 5 blog topic ideas in bullet points only based on the given niche & outline and give me the result in Rich Text Editor format',
@@ -22,7 +22,7 @@ export default [
     },
     {
         name: 'Blog Content',
-        desc: 'An AI tool that serves as your personal blog post title writer, generating catchy and viral-worthy titles in your chosen language.',
+        desc: 'An AI tool that generates blog content based on your topic and outline.',
         category: 'Blog',
         icon: 'https://cdn-icons-png.flaticon.com/128/4905/4905454.png',
         slug: 'blog-content-generation',
@@ -43,7 +43,7 @@ export default [
     },
     {
         name: 'Blog Topic Ideas',
-        desc: 'An AI tool that generates catchy and viral-worthy blog post titles based on your chosen niche.',
+        desc: 'An AI tool that generates catchy blog post titles based on your niche.',
         category: 'Blog',
         icon: 'https://cdn-icons-png.flaticon.com/128/11497/11497847.png',
         slug: 'blog-topic-idea',
@@ -59,7 +59,7 @@ export default [
     },
     {
         name: 'Youtube SEO Title',
-        desc: 'An AI tool that generates catchy and SEO-optimized YouTube video titles based on keywords and outline.',
+        desc: 'An AI tool that generates SEO-optimized YouTube video titles.',
         category: 'Youtube Tools',
         icon: 'https://cdn-icons-png.flaticon.com/128/402/402075.png',
         slug: 'youtube-seo-title',
@@ -80,7 +80,7 @@ export default [
     },
     {
         name: 'Youtube Description',
-        desc: 'An AI tool that generates a catchy YouTube video description with emojis under 4-5 lines based on topic and outline.',
+        desc: 'An AI tool that generates YouTube descriptions with emojis.',
         category: 'Youtube Tool',
         icon: 'https://cdn-icons-png.flaticon.com/128/2111/2111748.png',
         slug: 'youtube-description',
@@ -101,7 +101,7 @@ export default [
     },
     {
         name: 'Youtube Tags',
-        desc: 'An AI tool that generates 10 YouTube tags based on title and outline.',
+        desc: 'An AI tool that generates YouTube tags based on title and outline.',
         category: 'Youtube Tool',
         icon: 'https://cdn-icons-png.flaticon.com/128/4674/4674918.png',
         slug: 'youtube-tag',
@@ -121,8 +121,8 @@ export default [
         ]
     },
     {
-        name: 'Rewrite Article (Plagiarism Free)',
-        desc: 'Use this tool to rewrite existing articles or blog posts to bypass AI detectors and make it plagiarism-free.',
+        name: 'Rewrite Article',
+        desc: 'An AI tool to rewrite articles and make them plagiarism-free.',
         icon: 'https://cdn-icons-png.flaticon.com/128/3131/3131607.png',
         category: 'Rewriting Tool',
         slug: 'rewrite-article',
@@ -138,7 +138,7 @@ export default [
     },
     {
         name: 'Text Improver',
-        desc: 'This handy tool refines your writing, eliminating errors and redundancies for a clear, readable result. It also offers a comprehensive tone analysis and suggests better word choices.',
+        desc: 'An AI tool to refine and improve your writing to perfection.',
         icon: 'https://cdn-icons-png.flaticon.com/128/1686/1686815.png',
         category: 'Writing Assistant',
         slug: 'text-improver',
@@ -153,7 +153,7 @@ export default [
     },
     {
         name: 'Add Emojis to Text',
-        desc: 'An AI tool that adds emojis to your text based on the outline and rewrites it in Rich Text Editor format.',
+        desc: 'An AI tool that adds emojis to your text based on your input.',
         icon: 'https://cdn-icons-png.flaticon.com/128/2584/2584606.png',
         category: 'Blog',
         slug: 'add-emoji-to-text',
@@ -168,8 +168,8 @@ export default [
         ]
     },
     {
-        name: 'Instagram Post Generator',
-        desc: 'An AI tool that generates 3 Instagram posts based on given keywords in Rich Text Editor format.',
+        name: 'Post Generator',
+        desc: 'An AI tool that generates Instagram posts based on keywords.',
         icon: 'https://cdn-icons-png.flaticon.com/128/15713/15713420.png',
         category: 'Blog',
         slug: 'instagram-post-generator',
@@ -184,8 +184,8 @@ export default [
         ]
     },
     {
-        name: 'Instagram Hash Tag Generator',
-        desc: 'An AI tool that generates 15 Instagram hashtags based on given keywords in Rich Text Editor format.',
+        name: 'Tag Generator',
+        desc: 'An AI tool that generates Instagram hashtags based on keywords.',
         icon: 'https://cdn-icons-png.flaticon.com/128/7045/7045432.png',
         category: 'Blog',
         slug: 'instagram-hash-tag-generator',
@@ -200,8 +200,8 @@ export default [
         ]
     },
     {
-        name: 'Instagram Post/Reel Idea',
-        desc: 'An AI tool that generates new and trending Instagram ideas based on your niche.',
+        name: 'Instagram Post Idea',
+        desc: 'An AI tool that generates trending Instagram ideas based on your niche.',
         icon: 'https://cdn-icons-png.flaticon.com/128/1029/1029183.png',
         category: 'Instagram',
         slug: 'instagram-post-idea-generator',
@@ -216,8 +216,8 @@ export default [
         ]
     },
     {
-        name: 'English Grammar Check',
-        desc: 'AI model to correct your English grammar by providing the text.',
+        name: 'Grammar Check',
+        desc: 'An AI tool to correct your English grammar mistake and make the text perfect.',
         icon: 'https://cdn-icons-png.flaticon.com/128/12596/12596700.png',
         category: 'English',
         slug: 'english-grammar-checker',
@@ -233,7 +233,7 @@ export default [
     },
     {
         name: 'Write Code',
-        desc: 'AI model to generate programming code in any language.',
+        desc: 'An AI tool to generate programming code in any language.',
         icon: 'https://cdn-icons-png.flaticon.com/128/6062/6062646.png',
         category: 'Coding',
         slug: 'write-code',
@@ -249,7 +249,7 @@ export default [
     },
     {
         name: 'Explain Code',
-        desc: 'AI model to explain programming code in any language.',
+        desc: 'An AI tool to explain programming code in any language.',
         icon: 'https://cdn-icons-png.flaticon.com/128/8488/8488751.png',
         category: 'Coding',
         slug: 'explain-code',
@@ -265,7 +265,7 @@ export default [
     },
     {
         name: 'Code Bug Detector',
-        desc: 'This tool analyzes your input, such as error messages and code snippets, to pinpoint and fix bugs, offering detailed solutions and alternatives in a straightforward, user-friendly way.',
+        desc: 'An AI tool to find the errors in the code and then correct those errors.',
         icon: 'https://cdn-icons-png.flaticon.com/128/4426/4426267.png',
         category: 'Code Bug Detector',
         slug: 'code-bug-detector',
@@ -281,7 +281,7 @@ export default [
     },
     {
         name: 'Tagline Generator',
-        desc: 'Struggling to find the perfect tagline for your brand? Let our AI tool assist you in creating a tagline that stands out.',
+        desc: 'An AI tool to create catchy taglines for your brand based on your input',
         icon: 'https://cdn-icons-png.flaticon.com/128/2178/2178616.png',
         category: 'Marketing',
         slug: 'tagline-generator',
@@ -303,7 +303,7 @@ export default [
     },
     {
         name: 'Product Description',
-        desc: 'This is your AI-powered SEO expert, creating captivating and keyword-rich e-commerce product descriptions to boost your online sales.',
+        desc: 'An AI tool to create SEO-friendly product descriptions based on your input.',
         icon: 'https://cdn-icons-png.flaticon.com/128/679/679922.png',
         category: 'Marketing',
         slug: 'product-description',
@@ -322,7 +322,5 @@ export default [
                 required: true
             },
         ]
-    },
-    
-       
+    }
 ];

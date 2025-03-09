@@ -19,6 +19,7 @@ function SearchSection({ onSearchInput }: any) {
       </div>
     </div>
   );
+
 }
 
 export default SearchSection;

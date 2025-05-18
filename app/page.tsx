@@ -2,12 +2,37 @@
 
 import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
+import { useEffect } from 'react';
 
 export default function Home() {
   const router = useRouter();
 
+  // Splash cursor effect
+  useEffect(() => {
+    const handleMouseMove = (e: MouseEvent) => {
+      const cursorSplash = document.createElement('div');
+      cursorSplash.className = 'cursor-splash';
+      cursorSplash.style.left = `${e.clientX}px`;
+      cursorSplash.style.top = `${e.clientY}px`;
+      document.body.appendChild(cursorSplash);
+
+      // Remove the element after animation completes
+      setTimeout(() => {
+        cursorSplash.remove();
+      }, 1000);
+    };
+
+    document.addEventListener('mousemove', handleMouseMove);
+
+    return () => {
+      document.removeEventListener('mousemove', handleMouseMove);
+    };
+  }, []);
+
   return (
     <div className="min-h-screen flex flex-col items-center justify-center p-6 bg-gradient-to-r from-indigo-900 to-purple-900 relative overflow-hidden">
+      {/* Splash cursor elements will be created here dynamically */}
+
       {/* Glowing/Sparkling Tiny Dots/Stars in Background */}
       <div className="absolute inset-0 z-0">
         {[...Array(50)].map((_, index) => (
@@ -26,17 +51,17 @@ export default function Home() {
       {/* Header Section */}
       <header className="text-center mb-12 animate-fade-in relative z-10">
         <h1 className="text-5xl font-extrabold bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent drop-shadow-lg">
-          AI Content Generator
+          Free AI Tool Suite
         </h1>
         <p className="text-lg bg-gradient-to-r from-yellow-300 to-pink-300 bg-clip-text text-transparent mt-2 font-medium drop-shadow-md">
-          Generate high-quality content instantly with AI-powered tools.
+          Your Ultimate AI Tool Collection.
         </p>
       </header>
 
       {/* Features Section */}
       <section className="max-w-5xl text-center relative z-10">
         <h2 className="text-2xl font-semibold bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent mb-6 animate-fade-in">
-          Why Choose Our AI Content Generator?
+          What Makes Us Stand Out?
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {[
@@ -97,7 +122,7 @@ export default function Home() {
           ].map((feature, index) => (
             <div
               key={index}
-              className={`p-6 rounded-lg shadow-md text-white ${feature.bgColor} hover:scale-105 transition-transform duration-300 animate-fade-in-up relative overflow-hidden`}
+              className={`p-6 rounded-lg shadow-md text-white ${feature.bgColor} hover:scale-105 transition-3d transform-style-3d perspective-1000 hover:rotate-x-12 hover:rotate-y-12 hover:translate-z-20 hover:shadow-3d relative overflow-hidden`}
             >
               {/* Glowing Border Light */}
               <div className="absolute inset-0 rounded-lg bg-white/10 blur-md animate-glow-border" />
@@ -120,6 +145,33 @@ export default function Home() {
           Get Started
         </Button>
       </div>
+
+      {/* Add this to your global CSS */}
+      <style jsx global>{`
+        .cursor-splash {
+          position: fixed;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          background: radial-gradient(circle, rgba(255,255,255,0.8) 0%, rgba(192,132,252,0) 70%);
+          transform: translate(-50%, -50%);
+          pointer-events: none;
+          z-index: 9999;
+          animation: splash-fade 1s forwards;
+        }
+
+        @keyframes splash-fade {
+          0% {
+            transform: translate(-50%, -50%) scale(1);
+            opacity: 1;
+          }
+          100% {
+            transform: translate(-50%, -50%) scale(3);
+            opacity: 0;
+          }
+        }
+      `}</style>
     </div>
   );
 }
+
